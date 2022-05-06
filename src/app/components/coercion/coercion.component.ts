@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { BooleanInput, coerceBooleanProperty, coerceElement, coerceNumberProperty, NumberInput } from '@angular/cdk/coercion';
+import { Component, Directive, ElementRef, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-coercion',

@@ -8,9 +8,6 @@ import { coerceBooleanProperty } from '@angular/cdk/coercion';
 })
 export class CoercionChildComponent implements OnInit {
 
-  _isAdmin!: boolean;
-  _isSuperAdmin!: boolean;
-
   @Input()
   set isAdmin(value: any) {
     this._isAdmin = coerceBooleanProperty(value);
@@ -18,6 +15,8 @@ export class CoercionChildComponent implements OnInit {
   get isAdmin() {
     return this._isAdmin;
   }
+  private _isAdmin!: boolean;
+
 
   @Input()
   set isSuperAdmin(value: any) {
@@ -26,6 +25,7 @@ export class CoercionChildComponent implements OnInit {
   get isSuperAdmin() {
     return this._isSuperAdmin;
   }
+  private _isSuperAdmin!: boolean;
 
   constructor() { }
 
